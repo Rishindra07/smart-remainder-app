@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/bg_home_top" android:padding="16dp"
+    android:clipToOutline="true">
+
+    <TextView
+        android:id="@+id/tvDailyProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Progress"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/ivBell"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_notification_bell"
+        android:contentDescription="Notifications"
+        app:tint="#FFFFFF" />
+
+    <View
+        android:id="@+id/notificationDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignTop="@id/ivBell"
+        android:layout_alignEnd="@id/ivBell"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/red_dot" />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvDailyProgress"
+        android:layout_marginTop="-20dp">
+
+        <ProgressBar
+            android:id="@+id/circularProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/circular_progress"
+            android:rotation="-90"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDoses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 of 2 doses"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

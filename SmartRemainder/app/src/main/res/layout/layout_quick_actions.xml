@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quickActionsSection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:padding="8dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Add Medication -->
+    <LinearLayout
+        android:id="@+id/llAddMedication"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_add_medication"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_input_add"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Medication"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Calendar View -->
+    <LinearLayout
+        android:id="@+id/llCalendarView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_calendar"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_month"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar View"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- History Log -->
+    <LinearLayout
+        android:id="@+id/llHistoryLog"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_history"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_recent_history"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History Log"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Refill Tracker -->
+
+    <!-- 🧍 User Profile -->
+    <LinearLayout
+        android:id="@+id/llUserProfile"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_profile"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_chart"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Analytics"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- ☎️ Emergency Call -->
+
+
+</GridLayout>

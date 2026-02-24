@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartRemainder</string>
+    <string name="welcome_user">Welcome, User!</string>
+    <string name="welcome_user_name">Welcome, %1$s!</string>
+    <string name="doses_taken">%1$d of %2$d doses</string>
+    <string name="percentage">%1$d%%</string>
+    <string name="error">Error</string>
+</resources>

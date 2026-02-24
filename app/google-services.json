@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "608511849413",
+    "project_id": "smartremainder-8a5d8",
+    "storage_bucket": "smartremainder-8a5d8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608511849413:android:4c9634649845f9e50991ac",
+        "android_client_info": {
+          "package_name": "com.example.smartremainder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLx1AfxO7dGqzFR84bBJQen8WdLWPLmwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

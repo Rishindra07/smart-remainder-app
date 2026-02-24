@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".WelComePage">
+
+    <!-- Main Content Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="40dp">
+
+            <!-- Circular Logo Background -->
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:padding="22dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="App Logo"
+
+                    android:src="@drawable/logo" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Smart Reminder"
+                android:textColor="#333333"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04"/>
+
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="36dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Your personal medication assistant that keeps you healthy and on time."
+                android:textAlignment="center"
+                android:textColor="#444444"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGetStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:cornerRadius="20dp"/>
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Already have an account? Login"
+                android:textSize="15sp"
+                android:textColor="@color/teal_700"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
